@@ -28,7 +28,32 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="layout">
+          <header className="layout-header">
+            <h1>Dental Clinic</h1>
+          </header>
+          <main>{children}</main>
+          <footer className="layout-footer">
+            <p>&copy; 2023 Dental Clinic. All rights reserved.</p>
+          </footer>
+          <style jsx>{`
+            .layout {
+              font-family: 'Arial', sans-serif;
+              color: #333;
+            }
+            .layout-header {
+              background-color: #007bff;
+              color: white;
+              padding: 10px;
+              text-align: center;
+            }
+            .layout-footer {
+              text-align: center;
+              padding: 10px;
+              background-color: #f1f1f1;
+            }
+          `}</style>
+        </div>
       </body>
     </html>
   );
