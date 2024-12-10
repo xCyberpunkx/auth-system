@@ -70,3 +70,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.layout {
+  font-family: var(--font-geist-sans);
+  color: #333;
+}
+
+.layout-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.layout-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
